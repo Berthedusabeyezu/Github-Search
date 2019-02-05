@@ -46,7 +46,7 @@ import{UserRequestService} from '../user-http/user-request.service'
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.css'],
   providers:[UserService,UserRequestService]
-})
+}) 
 @Injectable()
 export class SearchComponent implements OnInit {
   user:User;

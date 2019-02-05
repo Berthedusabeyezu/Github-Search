@@ -11,7 +11,7 @@ export class UserRequestService {
   constructor(private http:HttpClient) {
     this.user=new User("","","",0,0,0);
    }
-   userRequest(){
+   userRequest(){ 
 
     interface ApiResponse{
         

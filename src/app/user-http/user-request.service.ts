@@ -18,8 +18,8 @@ export class UserRequestService {
          
         name:string;
         avatar_url:string;
-        location:string;
-        followers:number;
+        location:string; 
+        followers:number; 
         following:number; 
         public_repos:number
 

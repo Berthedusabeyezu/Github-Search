@@ -15,7 +15,7 @@ export class UserRequestService {
 
     interface ApiResponse{
         
-        
+         
         name:string;
         avatar_url:string;
         location:string;

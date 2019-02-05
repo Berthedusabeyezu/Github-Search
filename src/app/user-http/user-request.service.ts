@@ -38,7 +38,7 @@ export class UserRequestService {
           this.user.public_repos=response.public_repos
 
           resolve()
-      },
+      }, 
       error=>{
         this.user.name="Never, never, never give up"
         this.user.location="winston churchill"

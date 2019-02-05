@@ -60,7 +60,7 @@ export class SearchComponent implements OnInit {
     this.user=this.userService.user
   
     }
-    
+     
     
    
   }

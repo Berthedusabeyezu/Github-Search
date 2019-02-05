@@ -50,7 +50,7 @@ export class UserRequestService {
         reject(error)
     }
 )
-})
+}) 
 
 return promise
 }

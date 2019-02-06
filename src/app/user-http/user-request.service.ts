@@ -26,7 +26,7 @@ var search = username
 
     }
     let promise =new Promise((resolve,reject)=>{
-      this.http.get<ApiResponse>('https://api.github.com/users/' + search + "?access_token="+ environment.apikey).toPromise().then(response=>{
+      this.http.get<ApiResponse>('https://api.github.com/users/' + search + "?access_token=960df42f7a98e29b3dc68316f08459072b26cf67").toPromise().then(response=>{
         
           this.user.name=response.name
           this.user.avatar_url=response.avatar_url

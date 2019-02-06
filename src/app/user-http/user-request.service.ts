@@ -15,7 +15,7 @@ export class UserRequestService {
 var search = username
 
     interface ApiResponse{
-        
+         
           
         name:string;
         avatar_url:string;

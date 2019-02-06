@@ -8,7 +8,7 @@
                 <div *ngFor='let user of users'>
                     <li appStrikethrough>{{user.name}}</li>
                     <button  (click)='toogleDetails()'>Toogle Details</button>
-                    <app-user-details *ngIf="user.showDescription" [user]='user' (isComplete)= 'completeGoal($event,i)'></app-user-details>
+                    <app-user-details *ngIf="user.showDescription" [user]='user' (isComplete)= 'completeUser($event,i)'></app-user-details>
                 </div>
                 </ul> -->
     <div class="row">  

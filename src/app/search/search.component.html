@@ -1,8 +1,16 @@
-<!-- <p>
-  search works!
-</p> -->
 
+
+<input class="input-field" type="text" placeholder="Username" [(ngModel)]="userName">
+    <button (click)="submitInput()"class="fa fa-search" ></button>
+  
 <div class="container">
+        <!-- <ul>
+                <div *ngFor='let user of users'>
+                    <li appStrikethrough>{{user.name}}</li>
+                    <button  (click)='toogleDetails()'>Toogle Details</button>
+                    <app-user-details *ngIf="user.showDescription" [user]='user' (isComplete)= 'completeGoal($event,i)'></app-user-details>
+                </div>
+                </ul> -->
     <div class="row">  
         <blockquote class="text-center text-lg"> 
        

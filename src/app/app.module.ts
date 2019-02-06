@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { SearchComponent } from './search/search.component';
 import {HttpClientModule} from '@angular/common/http';
+// import { StrikethroughDirective } from './strikethrough.directive';
 @NgModule({
   declarations: [
     AppComponent,
     SearchFormComponent,
-    SearchComponent
+    SearchComponent,
+    // StrikethroughDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    // StrikethroughDirective  
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

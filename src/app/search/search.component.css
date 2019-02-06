@@ -1,0 +1,20 @@
+title{
+    color: brown;
+}
+.container{
+    color: blueviolet;
+    background-color: gainsboro;
+    font-family: verdana;
+    border-style: solid;
+    text-align: center;
+}
+.input-field{
+    color: black;
+}
+button{
+    color: blue;
+    border: solid blue;
+}
+h1{
+    color: brown;
+}

@@ -35,7 +35,7 @@
 
 // }
 import { Injectable } from '@angular/core';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {User} from "../user";
 import{environment} from "../../environments/environment";
@@ -45,18 +45,22 @@ import{UserRequestService} from '../user-http/user-request.service'
   selector: 'app-search',
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.css'],
-  providers:[UserService,UserRequestService]
+  providers:[UserRequestService]
 }) 
 @Injectable()
 export class SearchComponent implements OnInit {
   user:User;
+  userName="";
+  submitInput(){
+    this.userService.userRequest(this.userName)
+  }
 
   constructor(private userService:UserRequestService) {
     this.user=new User("","","",0,0,0)
    }
 
   ngOnInit() {
-    this.userService.userRequest()
+    this.userService.userRequest("Berthedusabeyezu")
     this.user=this.userService.user
   
     }
